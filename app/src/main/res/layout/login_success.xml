@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".activities.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date of Journey "
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Source"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/editText_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/editText_date"
+        android:layout_toStartOf="@+id/editText_date"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Departure"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/editText_source"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/editText_source"
+        android:layout_toStartOf="@+id/editText_source"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Destination"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/editText_departure"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Arrival"
+        android:id="@+id/textView5"
+        android:layout_above="@+id/editText_type_car"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Type of Car"
+        android:id="@+id/textView6"
+        android:textColor="#000000"
+        android:layout_above="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number of Seats"
+        android:id="@+id/textView7"
+        android:layout_above="@+id/editText_fare"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/editText_type_car"
+        android:textColor="#000000"
+        android:layout_toStartOf="@+id/editText_type_car" />
+        //android:layout_toStartOf="@+id/editText_type_car"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Fare"
+        android:id="@+id/textView8"
+        android:layout_above="@+id/editText_number"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@+id/editText_seats"
+        android:layout_toStartOf="@+id/editText_seats"
+        android:textColor="#000000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_date"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_alignBottom="@+id/textView" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_source"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_departure"
+        android:layout_below="@+id/editText_source"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_destination"
+        android:layout_below="@+id/editText_departure"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_above="@+id/textView5" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_arrival"
+        android:layout_below="@+id/editText_destination"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_alignBottom="@+id/textView5" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_type_car"
+        android:layout_above="@+id/editText_seats"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_seats"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_fare"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_toRightOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone number:"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/button_add"
+        android:layout_alignRight="@+id/button_add"
+        android:layout_alignEnd="@+id/button_add"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/editText_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName|number"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:text="Add Ride"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="35dp" />
+</RelativeLayout>
